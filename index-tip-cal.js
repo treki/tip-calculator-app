@@ -15,7 +15,7 @@ tips.forEach(function (val) {
 resetBtn.addEventListener("click", reset);
 tipCustom.addEventListener("input", tipInputFun);
 
-billInput.value = "0.0";
+billInput.value = "";
 peopleInput.value = "1";
 tipPerPerson.innerHTML = "$" + (0.0).toFixed(2);
 totalPerPerson.innerHTML = "$" + (0.0).toFixed(2);
@@ -72,7 +72,7 @@ function calculateTip() {
 }
 
 function reset() {
-  billInput.value = "0.0";
+  billInput.value = "";
   billInputFun();
   peopleInput.value = "1";
   peopleInputFun();
